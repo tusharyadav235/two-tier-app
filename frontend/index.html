@@ -1,0 +1,3 @@
+<!DOCTYPE html><html><body><h1>Frontend</h1><button onclick="load()">Call Backend</button><pre id='o'></pre><script>
+async function load(){let r=await fetch('/api/hello');document.getElementById('o').textContent=await r.text();}
+</script></body></html>
